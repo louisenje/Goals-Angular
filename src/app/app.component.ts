@@ -12,7 +12,7 @@ export class AppComponent {
     throw new Error("Method not implemented.");
   }
   goals:Goal[] = [
-    
+      
   ];
 }
 
