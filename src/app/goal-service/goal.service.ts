@@ -1,0 +1,19 @@
+import { Injectable } from '@angular/core';
+import { Goals } from '../goalList';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class GoalService {
+  getGoals(){ //method getGoal() returns our array
+    return Goals
+  }
+  getGoal(id){
+    for (let goal of Goals){
+      if (goal.id == id){
+        return goal;
+      }
+    }
+  }
+  constructor() { }
+}

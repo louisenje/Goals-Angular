@@ -297,7 +297,9 @@
     }
   }
 </style>
-<app-goal></app-goal>
+<!-- * *  <app-goal></app-goal>  We have replaced the <app-goal> selector with the <router-outlet> selector because the router will be responsible for views from now on. * --> 
+  <app-navbar></app-navbar>
+<router-outlet></router-outlet>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
@@ -309,4 +311,3 @@
 
 
 
-<router-outlet></router-outlet>
